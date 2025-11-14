@@ -53,10 +53,11 @@ class ri_msrpr_dk_node_ex04p02(Node):
         super().__init__("ri_msrpr_dk_node_ex04p02")
 
         qos = QoSProfile(depth=10)
-        self.a = np.array([-6.0, 0.0, -2.5, 2.0])
+        self.a = np.array([-6.0, 0.0, 2.5, -2.0])
         self.alpha = np.array([1.5708, 1.5708, 1.5708, 0.0])
         self.d = np.array([-3.5, 2.5, 0.5, 0.0])
-        self.theta = np.array([-2.0944, 3.1416, 2.0944, 0.0])
+        self.theta = np.array([-2.0944, 3.1416, -2.0944, 0.0])
+
 
         # Twist subscriber
         self.cspace_sub = self.create_subscription(
